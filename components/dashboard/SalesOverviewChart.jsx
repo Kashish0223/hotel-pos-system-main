@@ -69,6 +69,7 @@ export default function SalesOverviewChart({ data = [], loading = false }) {
                 tick={{ fontSize: 11, fill: "var(--dash-muted)" }}
               />
               <Tooltip
+                cursor={{ fill: "rgba(28, 30, 26, 0.06)", radius: [6, 6, 0, 0] }}
                 content={({ active, payload, label }) => {
                   if (active && payload && payload.length) {
                     return (
@@ -77,15 +78,15 @@ export default function SalesOverviewChart({ data = [], loading = false }) {
                           backgroundColor: "var(--dash-card)",
                           border: "1px solid var(--dash-border)",
                           borderRadius: "10px",
-                          padding: "8px 12px",
-                          boxShadow: "var(--dash-card-shadow)",
+                          padding: "8px 14px",
+                          boxShadow: "0 8px 24px -4px rgba(0, 0, 0, 0.15)",
                           fontSize: "12px",
                         }}
                       >
-                        <div style={{ color: "var(--dash-muted)", marginBottom: "4px" }}>
+                        <div style={{ color: "var(--dash-muted)", marginBottom: "2px", fontWeight: "500" }}>
                           {label}
                         </div>
-                        <div style={{ fontWeight: "700", color: "var(--dash-text)" }}>
+                        <div style={{ fontWeight: "700", color: "var(--dash-text)", fontSize: "13px" }}>
                           {formatCurrency(payload[0].value)}
                         </div>
                       </div>
@@ -99,6 +100,9 @@ export default function SalesOverviewChart({ data = [], loading = false }) {
                 fill="var(--dash-accent)"
                 radius={[6, 6, 0, 0]}
                 maxBarSize={42}
+                isAnimationActive={true}
+                animationDuration={900}
+                animationEasing="ease-out"
               />
             </BarChart>
           </ResponsiveContainer>

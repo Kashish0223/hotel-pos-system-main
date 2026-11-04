@@ -80,7 +80,7 @@ export default function AdminHeader({
     <Link
       href={href}
       onClick={onClick}
-      className="flex items-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-xl transition-all duration-200 group"
+      className="flex items-center text-gray-700 hover:text-[#ad4b24] hover:bg-[#f2dccd]/40 px-3 py-2 rounded-xl transition-all duration-200 group"
     >
       <Icon className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
       <span className="text-sm font-medium">{label}</span>
@@ -91,7 +91,7 @@ export default function AdminHeader({
     <Link
       href={href}
       onClick={onClick}
-      className="flex items-center text-gray-700 hover:text-blue-600 hover:bg-blue-50 px-4 py-3 rounded-xl transition-all duration-200 group"
+      className="flex items-center text-gray-700 hover:text-[#ad4b24] hover:bg-[#f2dccd]/40 px-4 py-3 rounded-xl transition-all duration-200 group"
     >
       <Icon className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" />
       <span className="text-sm font-medium">{label}</span>

@@ -248,11 +248,41 @@
 }
 
 .pulseDot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: var(--dash-positive);
-  box-shadow: 0 0 0 2px rgba(39, 116, 75, 0.2);
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.pulseDot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--dash-positive);
+  transform: translate(-50%, -50%);
+  animation: pulseDotRadar 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulseDotRadar {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(2.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.8);
+    opacity: 0;
+  }
 }
 
 .userCard {
@@ -526,6 +556,7 @@
   margin-bottom: 22px;
   flex-wrap: wrap;
   gap: 12px;
+  animation: fadeInUp 450ms var(--dash-ease) both;
 }
 
 .pageTitle {
@@ -555,6 +586,7 @@
   font-size: 12.5px;
   font-weight: 600;
   color: var(--dash-text-2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 /* KPI 4-Card Row */
@@ -587,12 +619,18 @@
   border: 1px solid var(--dash-border);
   position: relative;
   overflow: hidden;
-  transition: transform 200ms var(--dash-ease), box-shadow 200ms var(--dash-ease);
+  transition: transform 240ms var(--dash-ease), box-shadow 240ms var(--dash-ease), border-color 240ms var(--dash-ease);
+  animation: fadeInUp 450ms var(--dash-ease) both;
 }
 
+.kpiCard:nth-child(1) { animation-delay: 60ms; }
+.kpiCard:nth-child(2) { animation-delay: 120ms; }
+.kpiCard:nth-child(3) { animation-delay: 180ms; }
+.kpiCard:nth-child(4) { animation-delay: 240ms; }
+
 .kpiCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 0 14px 28px -10px rgba(28, 30, 26, 0.12), 0 0 0 1px var(--dash-border-strong);
 }
 
 .kpiClay {
@@ -628,12 +666,18 @@
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--dash-text);
   font-size: 13px;
+  transition: transform 220ms var(--dash-ease), background-color 220ms ease;
+}
+
+.kpiCard:hover .kpiIconBox {
+  transform: scale(1.12) rotate(4deg);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .kpiValueRow {
@@ -672,6 +716,18 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 18px;
   margin-bottom: 22px;
+}
+
+.staggerRow1 {
+  animation: fadeInUp 450ms var(--dash-ease) 160ms both;
+}
+
+.staggerRow2 {
+  animation: fadeInUp 450ms var(--dash-ease) 240ms both;
+}
+
+.staggerRow3 {
+  animation: fadeInUp 450ms var(--dash-ease) 320ms both;
 }
 
 .colSpan8 {
@@ -720,6 +776,12 @@
   box-shadow: var(--dash-card-shadow);
   display: flex;
   flex-direction: column;
+  transition: transform 240ms var(--dash-ease), box-shadow 240ms var(--dash-ease), border-color 240ms var(--dash-ease);
+}
+
+.panelCard:hover {
+  border-color: var(--dash-border-strong);
+  box-shadow: 0 12px 30px -12px rgba(28, 30, 26, 0.12);
 }
 
 .panelHeader {
@@ -747,10 +809,12 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  transition: transform 150ms ease, color 150ms ease;
 }
 
 .panelActionLink:hover {
   text-decoration: underline;
+  transform: translateX(2px);
 }
 
 .panelTag {
@@ -779,6 +843,13 @@
   background-color: var(--dash-surface-2);
   border: 1px solid var(--dash-border);
   font-size: 13px;
+  transition: background-color 180ms ease, transform 180ms var(--dash-ease), border-color 180ms ease;
+}
+
+.widgetRow:hover {
+  background-color: var(--dash-surface-3);
+  transform: translateX(3px);
+  border-color: var(--dash-border-strong);
 }
 
 .widgetRowMain {
@@ -863,12 +934,22 @@
   border: 1px solid var(--dash-border);
   text-decoration: none;
   color: var(--dash-text);
-  transition: background-color 150ms ease, border-color 150ms ease;
+  transition: transform 200ms var(--dash-ease), background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .quickActionTile:hover {
   background-color: var(--dash-surface-3);
-  border-color: var(--dash-border-strong);
+  border-color: var(--dash-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px -4px rgba(0, 0, 0, 0.08);
+}
+
+.quickActionTile svg {
+  transition: transform 200ms var(--dash-ease);
+}
+
+.quickActionTile:hover svg {
+  transform: scale(1.14);
 }
 
 .quickActionLabel {
@@ -881,6 +962,18 @@
   font-size: 18px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+}
+
+/* Entrance Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Low Stock Table */
@@ -1177,13 +1270,207 @@
   color: var(--dash-muted);
 }
 
+/* ==========================================================================
+   Quick Access Modules Grid (Ambrel Luxury Styling)
+   ========================================================================== */
+
+.moduleSection {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--dash-border);
+  animation: fadeInUp 450ms var(--dash-ease) 320ms both;
+}
+
+.moduleSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.moduleSectionTitle {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--dash-text);
+  margin: 0;
+}
+
+.moduleSectionSubtitle {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--dash-muted);
+  margin-top: 3px;
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1279px) {
+  .moduleGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .moduleGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .moduleGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.moduleCard {
+  background-color: var(--dash-card);
+  border: 1px solid var(--dash-border);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--dash-text);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--dash-card-shadow);
+  transition: transform 240ms var(--dash-ease), box-shadow 240ms var(--dash-ease), border-color 240ms var(--dash-ease);
+  animation: fadeInUp 400ms var(--dash-ease) both;
+}
+
+.moduleCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--dash-accent);
+  box-shadow: 0 14px 30px -10px rgba(173, 75, 36, 0.15), 0 0 0 1px var(--dash-accent);
+}
+
+.moduleCardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.moduleIconBox {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 240ms var(--dash-ease), background-color 240ms ease;
+}
+
+.moduleCard:hover .moduleIconBox {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.moduleMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.moduleBadge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}
+
+.moduleArrow {
+  color: var(--dash-muted);
+  opacity: 0.5;
+  transition: transform 200ms var(--dash-ease), opacity 200ms ease, color 200ms ease;
+}
+
+.moduleCard:hover .moduleArrow {
+  opacity: 1;
+  color: var(--dash-accent);
+  transform: translate(2px, -2px);
+}
+
+.moduleTitle {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--dash-text);
+  letter-spacing: -0.01em;
+  margin: 0 0 4px 0;
+  transition: color 150ms ease;
+}
+
+.moduleCard:hover .moduleTitle {
+  color: var(--dash-accent);
+}
+
+.moduleDesc {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dash-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Category Palettes for Module Cards */
+.moduleThemeClay {
+  background-color: var(--dash-clay-kpi);
+  color: var(--dash-accent);
+}
+
+.moduleThemeSage {
+  background-color: var(--dash-sage-kpi);
+  color: var(--dash-positive);
+}
+
+.moduleThemeSand {
+  background-color: var(--dash-sand-kpi);
+  color: var(--dash-warning);
+}
+
+.moduleThemeSky {
+  background-color: var(--dash-sky-kpi);
+  color: #2b5c8f;
+}
+
+.moduleBadgeClay {
+  background-color: rgba(173, 75, 36, 0.12);
+  color: var(--dash-accent);
+}
+
+.moduleBadgeSage {
+  background-color: rgba(39, 116, 75, 0.12);
+  color: var(--dash-positive);
+}
+
+.moduleBadgeSand {
+  background-color: rgba(143, 91, 12, 0.12);
+  color: var(--dash-warning);
+}
+
+.moduleBadgeSky {
+  background-color: rgba(43, 92, 143, 0.12);
+  color: #2b5c8f;
+}
+
 /* Reduced Motion Override */
 @media (prefers-reduced-motion: reduce) {
   .searchOverlay,
   .searchDialog,
   .actionsDropdown,
   .sidebarContainer,
-  .kpiCard {
+  .kpiCard,
+  .moduleCard,
+  .pulseDot::after {
     animation: none !important;
     transition: none !important;
   }

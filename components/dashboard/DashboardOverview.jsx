@@ -150,7 +150,7 @@ export default function DashboardOverview({
       </section>
 
       {/* 3. 12-Column Row 1: Sales Chart (8) + Service Overview (4) */}
-      <section className={styles.contentGrid12} aria-label="Sales and Service Overview">
+      <section className={`${styles.contentGrid12} ${styles.staggerRow1}`} aria-label="Sales and Service Overview">
         {canViewFinancials ? (
           <SalesOverviewChart data={salesChart} loading={loading} />
         ) : (
@@ -181,7 +181,7 @@ export default function DashboardOverview({
       </section>
 
       {/* 4. 12-Column Row 2: Three 4-Column Cards */}
-      <section className={styles.contentGrid12} aria-label="Secondary Insights">
+      <section className={`${styles.contentGrid12} ${styles.staggerRow2}`} aria-label="Secondary Insights">
         <PopularItemsCard items={popularItems} />
         <RecentActivityCard orders={recentOrders} />
         <TeamSummaryCard totalStaff={totalStaff} canManage={canViewStaff} />
@@ -189,16 +189,21 @@ export default function DashboardOverview({
 
       {/* 5. 12-Column Row 3: Full-width Low Stock Panel */}
       {canViewInventory && (
-        <section className={styles.contentGrid12} aria-label="Inventory Alerts">
+        <section className={`${styles.contentGrid12} ${styles.staggerRow3}`} aria-label="Inventory Alerts">
           <LowStockCard items={lowStockList} lowStockCount={lowStockItems} />
         </section>
       )}
 
-      {/* 6. Preserved Module Shortcuts Grid */}
-      <section className="mt-8 pt-6 border-t border-black/5" aria-label="Operational Modules">
-        <div className="mb-4">
-          <h2 className="text-base font-bold text-gray-800">Quick Access Modules</h2>
-          <p className="text-xs text-gray-500">All permitted POS management and back-office tools</p>
+      {/* 6. Preserved Module Shortcuts Grid (Ambrel Luxury Styling) */}
+      <section className={styles.moduleSection} aria-label="Operational Modules">
+        <div className={styles.moduleSectionHeader}>
+          <div>
+            <h2 className={styles.moduleSectionTitle}>Quick Access Modules</h2>
+            <p className={styles.moduleSectionSubtitle}>
+              All permitted POS management and back-office operational tools
+            </p>
+          </div>
+          <span className={styles.panelTag}>POS Back-Office</span>
         </div>
         <DashboardCards user={user} />
       </section>

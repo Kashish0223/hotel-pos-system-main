@@ -75,11 +75,12 @@ async function main() {
     console.log(`\n☁️ Connected to Cloud MongoDB: ${uri.split("@").pop() || "Atlas"}\n`);
   }
 
-  // Launch Next.js dev server using node executable directly
-  const nextBin = require.resolve("next/dist/bin/next");
-  const nextProcess = spawn(process.execPath, [nextBin, "dev"], {
+  // Launch Next.js dev server
+  const nextBin = path.resolve(__dirname, "../node_modules/.bin/next");
+  const nextProcess = spawn(nextBin, ["dev"], {
     stdio: "inherit",
     env: process.env,
+    shell: true,
   });
 
   const cleanup = () => {
