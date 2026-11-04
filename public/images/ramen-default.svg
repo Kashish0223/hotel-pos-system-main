@@ -1,0 +1,53 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#ramenGradient)"/>
+  
+  <!-- Bowl -->
+  <ellipse cx="200" cy="220" rx="140" ry="30" fill="#8B4513" opacity="0.8"/>
+  <ellipse cx="200" cy="210" rx="135" ry="28" fill="#A0522D"/>
+  <ellipse cx="200" cy="205" rx="130" ry="25" fill="#D2691E"/>
+  
+  <!-- Broth -->
+  <ellipse cx="200" cy="200" rx="125" ry="22" fill="#CD853F"/>
+  <ellipse cx="200" cy="195" rx="120" ry="20" fill="#DEB887"/>
+  
+  <!-- Noodles -->
+  <path d="M120 190 Q140 180 160 190 Q180 200 200 190 Q220 180 240 190 Q260 200 280 190" stroke="#F5DEB3" stroke-width="4" fill="none"/>
+  <path d="M125 195 Q145 185 165 195 Q185 205 205 195 Q225 185 245 195 Q265 205 275 195" stroke="#F5DEB3" stroke-width="4" fill="none"/>
+  <path d="M130 200 Q150 190 170 200 Q190 210 210 200 Q230 190 250 200 Q270 210 270 200" stroke="#F5DEB3" stroke-width="4" fill="none"/>
+  
+  <!-- Egg -->
+  <ellipse cx="180" cy="185" rx="15" ry="12" fill="#FFF8DC"/>
+  <ellipse cx="180" cy="185" rx="8" ry="6" fill="#FFD700"/>
+  
+  <!-- Green onions -->
+  <rect x="220" y="175" width="3" height="15" fill="#228B22" transform="rotate(15 220 175)"/>
+  <rect x="225" y="180" width="3" height="12" fill="#32CD32" transform="rotate(-10 225 180)"/>
+  <rect x="215" y="185" width="3" height="10" fill="#228B22" transform="rotate(25 215 185)"/>
+  
+  <!-- Pork slices -->
+  <ellipse cx="160" cy="190" rx="12" ry="8" fill="#CD853F"/>
+  <ellipse cx="240" cy="185" rx="12" ry="8" fill="#D2691E"/>
+  
+  <!-- Bamboo shoots */
+  <path d="M200 175 L205 185 L195 185 Z" fill="#F5F5DC"/>
+  <path d="M210 180 L215 190 L205 190 Z" fill="#F5F5DC"/>
+  
+  <!-- Chopsticks */
+  <rect x="300" y="100" width="2" height="100" fill="#8B4513" transform="rotate(15 300 100)"/>
+  <rect x="305" y="105" width="2" height="100" fill="#8B4513" transform="rotate(20 305 105)"/>
+  
+  <!-- Steam -->
+  <path d="M150 160 Q155 150 150 140 Q145 130 150 120" stroke="#E6E6FA" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M200 155 Q205 145 200 135 Q195 125 200 115" stroke="#E6E6FA" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M250 160 Q255 150 250 140 Q245 130 250 120" stroke="#E6E6FA" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="ramenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F5DEB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEB887;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

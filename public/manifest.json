@@ -1,0 +1,44 @@
+{
+  "name": "Hotel-POS - Management System",
+  "short_name": "Hotel-POS",
+  "description": "Point of Sale system for Hotel-POS F&B",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "248x131",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/phone.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/communication.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/pos-screen.png",
+      "sizes": "1032x804",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "POS Interface"
+    },
+    {
+      "src": "/images/steward-screen.png",
+      "sizes": "506x772",
+      "type": "image/png",
+      "label": "Mobile Steward View"
+    }
+  ]
+}

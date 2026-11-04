@@ -1,0 +1,227 @@
+{
+  "menu": [
+    {
+      "_id": "quick_001",
+      "name": "クイックセット",
+      "nameEn": "QUICK SET (2 side dishes)",
+      "price": 350,
+      "category": "quick_menu",
+      "categoryName": "即菜",
+      "categoryNameEn": "QUICK MENU",
+      "description": "2つのサイドディッシュ付きクイックセット",
+      "descriptionEn": "Quick set meal with 2 side dishes",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "quick_002",
+      "name": "冷奴 旨塩ネギ",
+      "nameEn": "HIYAYAKKO-Negi",
+      "price": 290,
+      "category": "quick_menu",
+      "categoryName": "即菜",
+      "categoryNameEn": "QUICK MENU",
+      "description": "旨塩ネギをのせた冷奴",
+      "descriptionEn": "Cold tofu with salted green onions",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "quick_003",
+      "name": "冷奴 かつお節",
+      "nameEn": "HIYAYAKKO-Katsuobushi",
+      "price": 290,
+      "category": "quick_menu",
+      "categoryName": "即菜",
+      "categoryNameEn": "QUICK MENU",
+      "description": "かつお節をのせた冷奴",
+      "descriptionEn": "Cold tofu with bonito flakes",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "quick_004",
+      "name": "自家製キムチ",
+      "nameEn": "KIMCHI",
+      "price": 290,
+      "category": "quick_menu",
+      "categoryName": "即菜",
+      "categoryNameEn": "QUICK MENU",
+      "description": "自家製の美味しいキムチ",
+      "descriptionEn": "Homemade delicious kimchi",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "appetizer_001",
+      "name": "枝豆",
+      "nameEn": "EDAMAME",
+      "price": 250,
+      "category": "appetizers",
+      "categoryName": "前菜",
+      "categoryNameEn": "APPETIZERS",
+      "description": "塩茹でした新鮮な枝豆",
+      "descriptionEn": "Fresh boiled edamame with salt",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "appetizer_002",
+      "name": "チキン南蛮",
+      "nameEn": "CHICKEN NANBAN",
+      "price": 480,
+      "category": "appetizers",
+      "categoryName": "前菜",
+      "categoryNameEn": "APPETIZERS",
+      "description": "タルタルソース付きチキン南蛮",
+      "descriptionEn": "Chicken nanban with tartar sauce",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "main_001",
+      "name": "牛肉ステーキ",
+      "nameEn": "BEEF STEAK",
+      "price": 1200,
+      "category": "main_dishes",
+      "categoryName": "メイン料理",
+      "categoryNameEn": "MAIN DISHES",
+      "description": "ジューシーな牛肉ステーキ",
+      "descriptionEn": "Juicy beef steak",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "main_002",
+      "name": "鶏の照り焼き",
+      "nameEn": "TERIYAKI CHICKEN",
+      "price": 850,
+      "category": "main_dishes",
+      "categoryName": "メイン料理",
+      "categoryNameEn": "MAIN DISHES",
+      "description": "甘辛い照り焼きソースの鶏肉",
+      "descriptionEn": "Chicken with sweet and savory teriyaki sauce",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "drink_001",
+      "name": "生ビール",
+      "nameEn": "DRAFT BEER",
+      "price": 450,
+      "category": "beverages",
+      "categoryName": "飲み物",
+      "categoryNameEn": "BEVERAGES",
+      "description": "冷たい生ビール",
+      "descriptionEn": "Cold draft beer",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "drink_002",
+      "name": "日本酒",
+      "nameEn": "SAKE",
+      "price": 380,
+      "category": "beverages",
+      "categoryName": "飲み物",
+      "categoryNameEn": "BEVERAGES",
+      "description": "プレミアム日本酒",
+      "descriptionEn": "Premium Japanese sake",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "dessert_001",
+      "name": "抹茶アイスクリーム",
+      "nameEn": "MATCHA ICE CREAM",
+      "price": 320,
+      "category": "desserts",
+      "categoryName": "デザート",
+      "categoryNameEn": "DESSERTS",
+      "description": "濃厚な抹茶アイスクリーム",
+      "descriptionEn": "Rich matcha ice cream",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "_id": "dessert_002",
+      "name": "チョコレートケーキ",
+      "nameEn": "CHOCOLATE CAKE",
+      "price": 420,
+      "category": "desserts",
+      "categoryName": "デザート",
+      "categoryNameEn": "DESSERTS",
+      "description": "リッチなチョコレートケーキ",
+      "descriptionEn": "Rich chocolate cake",
+      "available": true,
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "_id": "quick_menu",
+      "name": {
+        "en": "Quick Menu",
+        "ja": "即菜"
+      },
+      "description": {
+        "en": "Quick and easy dishes",
+        "ja": "手軽で簡単な料理"
+      },
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "_id": "appetizers",
+      "name": {
+        "en": "Appetizers",
+        "ja": "前菜"
+      },
+      "description": {
+        "en": "Start your meal with these delicious appetizers",
+        "ja": "美味しい前菜でお食事を始めましょう"
+      },
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "_id": "main_dishes",
+      "name": {
+        "en": "Main Dishes",
+        "ja": "メイン料理"
+      },
+      "description": {
+        "en": "Hearty main courses",
+        "ja": "ボリューム満点のメイン料理"
+      },
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "_id": "beverages",
+      "name": {
+        "en": "Beverages",
+        "ja": "飲み物"
+      },
+      "description": {
+        "en": "Refreshing drinks",
+        "ja": "爽やかな飲み物"
+      },
+      "displayOrder": 4,
+      "active": true
+    },
+    {
+      "_id": "desserts",
+      "name": {
+        "en": "Desserts",
+        "ja": "デザート"
+      },
+      "description": {
+        "en": "Sweet treats to end your meal",
+        "ja": "お食事の締めくくりに甘いデザート"
+      },
+      "displayOrder": 5,
+      "active": true
+    }
+  ]
+}

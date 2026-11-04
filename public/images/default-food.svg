@@ -1,0 +1,48 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#gradient)"/>
+  
+  <!-- Plate -->
+  <ellipse cx="200" cy="220" rx="120" ry="20" fill="#E5E7EB" opacity="0.8"/>
+  <ellipse cx="200" cy="210" rx="110" ry="18" fill="#F3F4F6"/>
+  
+  <!-- Food items -->
+  <!-- Main dish -->
+  <ellipse cx="200" cy="180" rx="60" ry="25" fill="#D97706"/>
+  <ellipse cx="200" cy="175" rx="55" ry="20" fill="#F59E0B"/>
+  
+  <!-- Side items -->
+  <circle cx="160" cy="190" r="15" fill="#10B981"/>
+  <circle cx="240" cy="190" r="15" fill="#EF4444"/>
+  <circle cx="180" cy="200" r="12" fill="#8B5CF6"/>
+  <circle cx="220" cy="200" r="12" fill="#F97316"/>
+  
+  <!-- Garnish -->
+  <path d="M190 160 Q200 150 210 160 Q200 170 190 160" fill="#22C55E"/>
+  <path d="M185 165 Q195 155 205 165 Q195 175 185 165" fill="#16A34A"/>
+  
+  <!-- Utensils -->
+  <!-- Fork -->
+  <rect x="120" y="120" width="3" height="80" fill="#6B7280"/>
+  <rect x="115" y="120" width="13" height="3" fill="#6B7280"/>
+  <rect x="115" y="125" width="13" height="2" fill="#6B7280"/>
+  <rect x="115" y="130" width="13" height="2" fill="#6B7280"/>
+  
+  <!-- Knife -->
+  <rect x="280" y="120" width="3" height="80" fill="#6B7280"/>
+  <path d="M280 120 L285 115 L285 125 Z" fill="#9CA3AF"/>
+  
+  <!-- Steam lines -->
+  <path d="M170 140 Q175 130 170 120" stroke="#D1D5DB" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M200 135 Q205 125 200 115" stroke="#D1D5DB" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M230 140 Q235 130 230 120" stroke="#D1D5DB" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FDE68A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+</svg>

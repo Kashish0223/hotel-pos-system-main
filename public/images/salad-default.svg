@@ -1,0 +1,50 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#saladGradient)"/>
+  
+  <!-- Bowl -->
+  <ellipse cx="200" cy="220" rx="130" ry="25" fill="#E5E7EB" opacity="0.8"/>
+  <ellipse cx="200" cy="210" rx="120" ry="22" fill="#F9FAFB"/>
+  <ellipse cx="200" cy="205" rx="115" ry="20" fill="#FFFFFF"/>
+  
+  <!-- Salad leaves -->
+  <path d="M150 180 Q160 160 180 170 Q170 190 150 180" fill="#22C55E"/>
+  <path d="M180 170 Q200 150 220 160 Q210 180 180 170" fill="#16A34A"/>
+  <path d="M220 160 Q240 140 260 150 Q250 170 220 160" fill="#22C55E"/>
+  <path d="M160 190 Q180 170 200 180 Q190 200 160 190" fill="#15803D"/>
+  <path d="M200 180 Q220 160 240 170 Q230 190 200 180" fill="#22C55E"/>
+  
+  <!-- Cherry tomatoes -->
+  <circle cx="170" cy="175" r="8" fill="#EF4444"/>
+  <circle cx="230" cy="165" r="8" fill="#DC2626"/>
+  <circle cx="190" cy="185" r="7" fill="#F87171"/>
+  
+  <!-- Cucumber slices -->
+  <ellipse cx="210" cy="175" rx="12" ry="8" fill="#10B981"/>
+  <ellipse cx="210" cy="175" rx="8" ry="5" fill="#D1FAE5"/>
+  <ellipse cx="180" cy="165" rx="10" ry="6" fill="#10B981"/>
+  <ellipse cx="180" cy="165" rx="6" ry="4" fill="#D1FAE5"/>
+  
+  <!-- Carrots -->
+  <ellipse cx="160" cy="170" rx="6" ry="3" fill="#F97316" transform="rotate(45 160 170)"/>
+  <ellipse cx="240" cy="180" rx="6" ry="3" fill="#EA580C" transform="rotate(-30 240 180)"/>
+  
+  <!-- Dressing drizzle -->
+  <path d="M180 150 Q190 155 185 160 Q195 165 190 170" stroke="#FCD34D" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M220 145 Q230 150 225 155 Q235 160 230 165" stroke="#FCD34D" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- Fork -->
+  <rect x="280" y="120" width="3" height="60" fill="#6B7280"/>
+  <rect x="275" y="120" width="13" height="3" fill="#6B7280"/>
+  <rect x="275" y="125" width="13" height="2" fill="#6B7280"/>
+  <rect x="275" y="130" width="13" height="2" fill="#6B7280"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="saladGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0FDF4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DCFCE7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBF7D0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

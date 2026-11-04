@@ -1,0 +1,61 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#sushiGradient)"/>
+  
+  <!-- Wooden board -->
+  <rect x="50" y="150" width="300" height="120" rx="10" fill="#8B4513"/>
+  <rect x="55" y="155" width="290" height="110" rx="8" fill="#A0522D"/>
+  
+  <!-- Sushi pieces -->
+  <!-- Salmon nigiri -->
+  <ellipse cx="120" cy="200" rx="25" ry="15" fill="#FFFFFF"/>
+  <ellipse cx="120" cy="195" rx="23" ry="12" fill="#FF6B6B"/>
+  
+  <!-- Tuna nigiri -->
+  <ellipse cx="180" cy="200" rx="25" ry="15" fill="#FFFFFF"/>
+  <ellipse cx="180" cy="195" rx="23" ry="12" fill="#DC143C"/>
+  
+  <!-- Shrimp nigiri -->
+  <ellipse cx="240" cy="200" rx="25" ry="15" fill="#FFFFFF"/>
+  <ellipse cx="240" cy="195" rx="23" ry="12" fill="#FFB6C1"/>
+  
+  <!-- Maki roll -->
+  <circle cx="300" cy="200" r="20" fill="#2D5016"/>
+  <circle cx="300" cy="200" r="15" fill="#FFFFFF"/>
+  <circle cx="300" cy="200" r="8" fill="#FF6B6B"/>
+  
+  <!-- Wasabi -->
+  <path d="M80 220 Q85 210 90 220 Q85 230 80 220" fill="#9ACD32"/>
+  
+  <!-- Ginger -->
+  <ellipse cx="100" cy="225" rx="8" ry="4" fill="#FFB6C1"/>
+  <ellipse cx="105" cy="230" rx="6" ry="3" fill="#FFC0CB"/>
+  
+  <!-- Soy sauce dish -->
+  <ellipse cx="320" cy="240" rx="15" ry="8" fill="#8B4513"/>
+  <ellipse cx="320" cy="238" rx="12" ry="6" fill="#2F1B14"/>
+  
+  <!-- Chopsticks -->
+  <rect x="150" y="120" width="2" height="80" fill="#8B4513" transform="rotate(15 150 120)"/>
+  <rect x="155" y="125" width="2" height="80" fill="#8B4513" transform="rotate(20 155 125)"/>
+  
+  <!-- Decorative elements -->
+  <!-- Sesame seeds on maki -->
+  <circle cx="295" cy="195" r="1" fill="#F5DEB3"/>
+  <circle cx="305" cy="205" r="1" fill="#F5DEB3"/>
+  <circle cx="298" cy="208" r="1" fill="#F5DEB3"/>
+  
+  <!-- Nori strips -->
+  <rect x="115" y="200" width="10" height="3" fill="#2D5016"/>
+  <rect x="175" y="200" width="10" height="3" fill="#2D5016"/>
+  <rect x="235" y="200" width="10" height="3" fill="#2D5016"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="sushiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E9ECEF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEE2E6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

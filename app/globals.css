@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+/* Hide the default Google Translate dropdown */
+
+#google_translate_element {
+  display: none !important;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+} 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-ORHb-OEVmcd .VIpgJd-ZVi9od-l4eHX-hSRGPd .VIpgJd-ZVi9od-xl07Ob-OEVmcd .skiptranslate {
+  display: none !important;
+  opacity: 0 !important;
+z-index: 0 !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+#goog-gt-vt {
+  display: none !important;
+}
+
+
+#goog-gt-tt{
+  display: none;
+}
+
+.google_translate_element {
+  min-height: 0px !important;
+  max-height: 0px !important;
+}
+
+iframe.skiptranslate {
+  display: none !important;
+}
+
+div.skiptranslate {
+  display: none !important;
+  background-color: transparent !important;
+  max-width: 0px !important;
+  max-height: 0px !important;
+}
+
+div#goog-gt-tt{
+  display: none !important;
+
+}
+
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+
+iframe {
+  display: none;
+}
+
+
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 1px;
+  border-radius: 5rem;
+  margin: 30px 0;
+  padding-right: 12px;
+    scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d69551; 
+  /* background-color: #500983; */
+  border-radius: 50px;
+}
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+
+/* In app/globals.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-receipt,
+  .print-receipt * {
+    visibility: visible;
+  }
+  .print-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    margin: 0 !important;
+    padding: 10px !important;
+    box-shadow: none !important;
+  }
+  .print-receipt .max-h-\[90vh\] {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .print-hide {
+    display: none !important;
+  }
+  @page {
+    size: 80mm auto;
+    margin: 0;
+  }
+}
+
+
+/* ============Swiper============= */
+
+
+/* Reduce arrow size */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  width: 25px;
+  height: 25px;
+  color: #c96d33; /* or use Tailwind `text-white` */
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 16px; /* default is ~20-24px */
+}
+
+/* Smaller pagination dots */
+.custom-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: white; /* Tailwind can’t directly style these */
+  opacity: 0.6;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: #c96d33; /* Tailwind's blue-500 */
+  opacity: 1;
+}
+
+
+
+/* ================================= */
+
+
+.dfc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
